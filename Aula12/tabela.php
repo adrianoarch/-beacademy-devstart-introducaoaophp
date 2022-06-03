@@ -61,34 +61,34 @@
         </thead>
         <tbody>
             <tr>
-                <td><?php echo $lancamento1['descricao'] ?></td>
-                <td><?php echo $lancamento1['valor'] ?></td>
-                <td><?php echo $lancamento1['tipo'] ?></td>
+                <td><?= $lancamento1['descricao'] ?></td>
+                <td><?= $lancamento1['valor'] ?></td>
+                <td><?= $lancamento1['tipo'] ?></td>
             </tr>
             <tr>
-                <td><?php echo $lancamento2['descricao'] ?></td>
-                <td><?php echo $lancamento2['valor'] ?></td>
-                <td><?php echo $lancamento2['tipo'] ?></td>
+                <td><?= $lancamento2['descricao'] ?></td>
+                <td><?= $lancamento2['valor'] ?></td>
+                <td><?= $lancamento2['tipo'] ?></td>
             </tr>
             <tr>
-                <td><?php echo $lancamento3['descricao'] ?></td>
-                <td><?php echo $lancamento3['valor'] ?></td>
-                <td><?php echo $lancamento3['tipo'] ?></td>
+                <td><?= $lancamento3['descricao'] ?></td>
+                <td><?= $lancamento3['valor'] ?></td>
+                <td><?= $lancamento3['tipo'] ?></td>
             </tr>
             <tr>
-                <td><?php echo $lancamento4['descricao'] ?></td>
-                <td><?php echo $lancamento4['valor'] ?></td>
-                <td><?php echo $lancamento4['tipo'] ?></td>
+                <td><?= $lancamento4['descricao'] ?></td>
+                <td><?= $lancamento4['valor'] ?></td>
+                <td><?= $lancamento4['tipo'] ?></td>
             </tr>
             <tr>
-                <td><?php echo $lancamento5['descricao'] ?></td>
-                <td><?php echo $lancamento5['valor'] ?></td>
-                <td><?php echo $lancamento5['tipo'] ?></td>
+                <td><?= $lancamento5['descricao'] ?></td>
+                <td><?= $lancamento5['valor'] ?></td>
+                <td><?= $lancamento5['tipo'] ?></td>
             </tr>
             <tr>
-                <td><?php echo $lancamento6['descricao'] ?></td>
-                <td><?php echo $lancamento6['valor'] ?></td>
-                <td><?php echo $lancamento6['tipo'] ?></td>
+                <td><?= $lancamento6['descricao'] ?></td>
+                <td><?= $lancamento6['valor'] ?></td>
+                <td><?= $lancamento6['tipo'] ?></td>
 
     </div>
 
