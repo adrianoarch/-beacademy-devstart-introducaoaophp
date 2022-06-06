@@ -4,23 +4,26 @@ $url = $_SERVER['REQUEST_URI'];
 
 include './telas/head.php';
 include './telas/menu.php';
+include './acoes.php';
 
 if ($url === '/'){
-    include 'telas/home.php';
+    home();
 } elseif ($url === '/login'){
-    include 'telas/login.php';
+    login();
 } elseif ($url === '/cadastro'){
-    include 'telas/cadastro.php';
+    cadastro();
 } elseif ($url === '/cadastro-sucesso'){
-    include 'telas/cadastro-sucesso.php';
+    cadastroSucesso();
 } elseif ($url === '/login-sucesso'){
-    include 'telas/login-sucesso.php';
+    loginSucesso();
 } elseif ($url === '/login-erro'){
-    include 'telas/login-erro.php';
+    loginErro();
 } elseif ($url === '/logout'){
-    include 'telas/logout.php';
+    logout();
+} elseif ($url === '/listar'){
+    listar();
 } else {
-    include 'telas/404.php';
+    error404();
 }
 
 include './telas/footer.php';
