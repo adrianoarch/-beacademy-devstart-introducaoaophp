@@ -34,12 +34,33 @@ function listar () {
 
 function relatorios() {
     include './telas/relatorios.php';
-}
+};
 
 function error404() {
     include './telas/404.php';
 }
 
 function excluir() {
-    echo "Excluindo...";
+    $id = $_GET['id'];
+    $contatos = file('./dados/contatos.csv');
+    unset($contatos[$id]);
+    $contatos = array_values($contatos);
+    $arquivo = fopen('./dados/contatos.csv', 'w');
+    foreach ($contatos as $contato) {
+        fwrite($arquivo, $contato);
+    }
+    fclose($arquivo);
+    // $mensagem = 'Contato excluído com sucesso!';
+    // include './telas/mensagem.php';
+    header('Location: /listar');
+}
+
+function editar() {
+    $id = $_GET['id'];
+    $contatos = file('./dados/contatos.csv');
+    $contato = explode(',', $contatos[$id]);
+    $nome = $contato[0];
+    $email = $contato[1];
+    $telefone = $contato[2];
+    include './telas/editar.php';
 }

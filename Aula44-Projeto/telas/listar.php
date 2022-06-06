@@ -1,7 +1,7 @@
-<div class="container">
-<h1>Listar Contatos</h1>
+<div class="container mt-4">
+<h1>Contatos Registrados</h1>
 
-<table class="table table-hover table-striped">
+<table class="table table-hover table-striped mt-3">
     <thead class="table-dark">
         <tr>
             <th class="">Nome</th>
@@ -21,10 +21,10 @@
             $acoes = "<a href='/editar?id=$id' class='btn btn-sm btn-warning'>Editar</a>
                     <a href='/excluir?id=$id' class='btn btn-sm btn-danger'>Excluir</a>";
             echo "<tr>";
-            echo "<td>$nome</td>";
-            echo "<td>$email</td>";
-            echo "<td>$telefone</td>";
-            echo "<td class='text-center'>$acoes</td>";
+            echo "<td class='m-auto'>$nome</td>";
+            echo "<td class='my-auto'>$email</td>";
+            echo "<td class='my-auto'>$telefone</td>";
+            echo "<td class='text-center align-self-center'>$acoes</td>";
             echo "</tr>";
         }
     ?>
