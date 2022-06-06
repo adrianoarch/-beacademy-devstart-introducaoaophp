@@ -54,13 +54,3 @@ function excluir() {
     // include './telas/mensagem.php';
     header('Location: /listar');
 }
-
-function editar() {
-    $id = $_GET['id'];
-    $contatos = file('./dados/contatos.csv');
-    $contato = explode(',', $contatos[$id]);
-    $nome = $contato[0];
-    $email = $contato[1];
-    $telefone = $contato[2];
-    include './telas/editar.php';
-}
